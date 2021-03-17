@@ -4,7 +4,7 @@ import scala.math.{exp, pow}
 import scala.language.postfixOps
 import scala.collection.JavaConversions._
 
-case class PoissonDistribution(private var lambda : Double = 1.0) {
+class PoissonDistribution(private var lambda : Double = 1.0) {
 
     // initialize uniform distribution
     val uniform = scala.util.Random

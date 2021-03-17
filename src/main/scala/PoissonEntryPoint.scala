@@ -7,5 +7,5 @@ case class PoissonEntryPoint() {
 		p.setLambda(lambda)
 		p
 	}
-	
+
 }
