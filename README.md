@@ -8,7 +8,7 @@ You must start the Java Server to sample from Poisson Distrbution using Scala & 
 
 Then start the server:
 
-	java -jar target/poisson-1.0-SNAPSHOT-jar-with-dependencies.jar
+	java -jar target/poisson-1.0-jar-with-dependencies.jar
 
 
 
