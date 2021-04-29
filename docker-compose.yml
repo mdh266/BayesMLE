@@ -1,0 +1,23 @@
+version: "3"
+services:
+
+  py4jserver:
+    build: py4jserver
+    container_name: "py4jserver"
+    ports:
+      - "25333:25333"
+
+  jupyter:
+    build: notebooks
+    container_name: "notebook"
+    volumes:
+      - "./:/home/jovyan/myspace"
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    links:
+      - py4jserver
+    depends_on:
+      - py4jserver
+
