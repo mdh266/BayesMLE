@@ -18,6 +18,7 @@ Then start the server:
 2. [Scala](https://www.scala-lang.org/)
 3. [Py4J](https://www.py4j.org/)
 4. [Python 3](https://www.python.org/)
+5. [PyMC3](https://docs.pymc.io/)
 
 
 
