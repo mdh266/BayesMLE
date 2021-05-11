@@ -1,4 +1,4 @@
-# Bayesian & Frequentist Statistics With Py4J and PyMC3
+# Frequentist & Bayesian Statistics With Py4J and PyMC3
 ----------
 
 You must start the Java Server to sample from Poisson Distrbution using Scala & Py4J first build the jar:
