@@ -19,4 +19,3 @@ def posterior_distribution(alpha, beta, samples):
                max(gamma.pdf(x, a = a, scale = 1 /b)),
                'r', lw=5, alpha=0.6, label='94% Confidence Interval')
     ax.legend()
-    plt.xlim(0.9,1.1)
