@@ -3,7 +3,7 @@
 
 In this post I want to go back to the basics of statistics, but with an advanced spin on things. By "advanced spin" I mean, both from in terms of mathematics and computational techniques. The topic will dive into is:
 
-    Estimating a single parameter value from a distribution and then quantifying the uncertantity in the estimate.
+- Estimating a single parameter value from a distribution and then quantifying the uncertantity in the estimate.
     
 In general I will take two approaches to quantitfying the uncertainity in the estimate, the first of which is [frequentist](https://en.wikipedia.org/wiki/Frequentist_inference) and second that is [Bayesian](https://en.wikipedia.org/wiki/Bayesian_statistics). I was originally inspired by [Jake Vanderplas' post](http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/) and admit, I am not very seasoned using Bayesian methods. That's why I'll be sticking to a simple example of estimating the mean rate or $\lambda$ in a [Poisson distribution](https://en.wikipedia.org/wiki/Poisson_distribution#) from sampled data.  An image of the Poisson distribution for various $\lambda$ values which we wish to esimate are shown below:
 
