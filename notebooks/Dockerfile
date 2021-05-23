@@ -47,5 +47,8 @@ RUN pip install -r /home/$NB_USER/myspace/requirements.txt
 ENV XDG_CACHE_HOME /home/$NB_USER/.cache/ 
 RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions /home/$NB_USER
+    
+USER root
+RUN apt-get update && apt-get install -y openjdk-8-jdk
 
 USER $NB_UID

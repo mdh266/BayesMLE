@@ -19,29 +19,36 @@ One can also show that in the limit of large data Bayesian estimators and Maximu
 https://en.wikipedia.org/wiki/Bernstein%E2%80%93von_Mises_theorem).
 
 
-## Starting the Poisson distribution server with Py4J
+## Building The Jar
 --------
-
-You must start the Java Server to sample from Poisson Distrbution using Scala & Py4J first build the jar:
+You first need to compile the [Scala](https://www.scala-lang.org/) code and build the [uber jar](https://stackoverflow.com/questions/11947037/what-is-an-uber-jar) using [Maven](https://maven.apache.org/)
 
 	mvn package
+    
+## Starting Java Server & Jupyter Lab With The Docker
+--------------------
+You build the docker images,
 
-Then start the server:
+    docker compose build
 
-	java -jar target/poisson-1.0-jar-with-dependencies.jar
+The start up the containers through,
 
-**Still working on getting PyJ4 to work with Docker...**
+    docker compose up
 
+You can shut down the contains using 
+
+    docker compose down
 
 ## Libraries:
 ----------
-1. [Apache Maven](https://maven.apache.org/)
-2. [Scala](https://www.scala-lang.org/)
-3. [Py4J](https://www.py4j.org/)
-4. [Python 3](https://www.python.org/)
-5. [PyMC3](https://docs.pymc.io/)
-6. [Seaborn](https://seaborn.pydata.org/)
-7. [ArivZ](https://arviz-devs.github.io/arviz/)
+0. [Docker 20.10.5](https://www.docker.com/)
+1. [Apache Maven 3.6.0](https://maven.apache.org/)
+2. [Scala 2.12.6](https://www.scala-lang.org/)
+3. [Py4J 0.10.9.2](https://www.py4j.org/)
+4. [Python 3.7](https://www.python.org/)
+5. [PyMC3 3.11.2](https://docs.pymc.io/)
+6. [Seaborn 0.11.0](https://seaborn.pydata.org/)
+7. [ArivZ 0.11.2](https://arviz-devs.github.io/arviz/)
 
 
 

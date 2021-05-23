@@ -10,7 +10,8 @@ object Main {
 		val app = new PoissonEntryPoint()
 		val builder = new GatewayServer.GatewayServerBuilder(app)
 		builder.javaAddress(addr);
-    val server = builder.build();
+		val server = builder.build();
+		server.start()
 		println("Gateway Server Started")
 	}
 }
